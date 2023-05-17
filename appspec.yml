@@ -4,7 +4,11 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/myapp
-
+permissions:
+  - object: /var/www/myapp
+    owner: root
+    group: root
+    mode: 755
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
