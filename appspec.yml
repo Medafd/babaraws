@@ -3,12 +3,11 @@ os: linux
 
 files:
   - source: /
-    destination: /
+    destination: /var/www/html/myapp
 
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
-      mode: 755
       timeout: 300
       runas: root
 
