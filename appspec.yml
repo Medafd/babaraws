@@ -5,7 +5,7 @@ files:
   - source: /
     destination: /var/www/html/myapp
 permissions:
-  - object: /var/www/myapp
+  - object: /var/www/html/myapp
     owner: root
     group: root
     mode: 755
